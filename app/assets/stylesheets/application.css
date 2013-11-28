@@ -1,14 +1,26 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the top of the
- * compiled file, but it's generally better to create a new file per style scope.
- *
- *= require_self
- *= require_tree .
- *= require flexslider.css
- */
+a 
+{
+	color: rgb(0,104,73); 
+	font-family: "HelveticaNeue-Light", sans-serif;
+	font-size: 20px;
+	float: right;
+	text-decoration: none;
+}
+
+#header
+{
+	background-image: url("Header.png");
+	background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center top;
+    background-attachment: fixed;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+body 
+{
+	background-color: #efefef;
+	font-family: "HelveticaNeue-Light", sans-serif;
+	font-size: 15px;
+}

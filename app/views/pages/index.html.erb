@@ -1,8 +1,9 @@
-<marquee><h3> Items </h3></marquee>
+<h3> Items </h3>
+
 <center>
-<% @items.each do |x| %>
-	<b><%= x.name%></b><br>
-	<%= image_tag x.img, :style => "height:200px;width:auto;" %><br>
-	<%=x.desc%><br><br>
-<% end %>
+  <% @items.each do |x| %>
+  	<b><%= x.name%></b><br>
+  	<%= image_tag x.img, :style => "height:200px;width:auto;" %><br>
+  	<%=x.desc%><br><br>
+  <% end %>
 </center>
