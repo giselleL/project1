@@ -9,12 +9,17 @@
 <body>
 
 <div id="header">
-	<%= link_to "Home", root_path %> 
-	<%= link_to "About", about_path %>	
-	<%= link_to "Gallery", gallery_path %>
+	<%= link_to "GALLERY", gallery_path %>
+	<%= link_to "ABOUT", about_path %>	
+	<%= link_to "HOME", root_path %> 
 </div>
 
 <%= yield %>
+
+<div id="footer">
+	Lingcon, Osano, Patolot, Santos, E. <br>
+	RoR Class
+</div>
 
 </body>
 </html>
