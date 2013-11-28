@@ -2,10 +2,26 @@
 
 <% @items.each do |x| %>
 	<%=x.desc%> <%=x.name%><br>
-<% end %> 
-
-<div class="galleria">
-    <img src="photo1.jpg">
-    <img src="photo2.jpg">
-    <img src="photo3.jpg">
+<% end %>
+<script>
+$(window).load(function() {
+  $('.flexslider').flexslider({
+    animation: "slide",
+    width: 10,
+    height: 10
+  });
+});
+</script>
+<div class="flexslider">
+  <ul class="slides">
+    <li>
+      <%= image_tag "photo1.jpg", :size => "10x10" %>
+    </li>
+    <li>
+      <%= image_tag "slide2.jpg" %>
+    </li>
+    <li>
+      <%= image_tag "slide3.jpg" %>
+    </li>
+  </ul>
 </div>

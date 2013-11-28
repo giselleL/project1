@@ -32,6 +32,9 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+# Flexslider for carousel
+gem 'flexslider', :git => 'https://github.com/constantm/Flexslider-2-Rails-Gem.git'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
