@@ -7,21 +7,21 @@
 $(window).load(function() {
   $('.flexslider').flexslider({
     animation: "slide",
-    width: 10,
-    height: 10
+    itemwidth: 100,
+    smoothHeight: true
   });
 });
 </script>
-<div class="flexslider">
+<center><div class="flexslider" style="width: 500px; height: 300px;">
   <ul class="slides">
     <li>
-      <%= image_tag "photo1.jpg", :size => "10x10" %>
+      <%= image_tag "photo1.jpg", :style => "width: 250px; height: 300px" %>
     </li>
     <li>
-      <%= image_tag "slide2.jpg" %>
+      <%= image_tag "slide2.jpg", :style => "height: 300px" %>
     </li>
     <li>
-      <%= image_tag "slide3.jpg" %>
+      <%= image_tag "slide3.jpg", :style => "height: 300px" %>
     </li>
   </ul>
-</div>
+</div></center>
