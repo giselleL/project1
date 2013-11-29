@@ -1,30 +1,9 @@
-<script>
-$(window).load(function() {
-  $('.flexslider').flexslider({
-    animation: "slide",
-    itemwidth: 100,
-    smoothHeight: true
-  });
-});
-</script>
-
-<h1>Da meni feses of ser hapi</h1>
-<center><div class="flexslider" style="width: 600px; height: 420px;">
-  <ul class="slides">
-    <li>
-      <%= image_tag "photo1.jpg", :style => "width: auto; height: 420px" %>
-    </li>
-    <li>
-      <%= image_tag "photo2.jpg", :style => "height: 420px" %>
-    </li>
-    <li>
-      <%= image_tag "photo3.jpg", :style => "width: auto; height: 420px" %>
-    </li>
-    <li>
-      <%= image_tag "photo4.jpg", :style => "height: 420px" %>
-    </li>
-    <li>
-      <%= image_tag "photo5.jpg", :style => "height: 420px" %>
-    </li>
-  </ul>
-</div></center>
+<title>Gallery</title>
+<h1>The many faces of Sir Happy</h1>
+<ul class="small-block-grid-2">
+  <li><%= image_tag "photo3.jpg"%></li>
+  <li><%= image_tag "photo2.jpg"%></li>
+  <li><%= image_tag "photo4.jpg"%></li>
+  <li><%= image_tag "photo1.jpg"%></li>
+  <li><%= image_tag "photo5.jpg"%></li>
+</ul>

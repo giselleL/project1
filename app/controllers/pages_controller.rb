@@ -6,6 +6,7 @@ class PagesController < ApplicationController
 		# bigboy = Item.new("Big Boy", "This is Sir Happy when he becomes a big boy.", "photo3.jpg")
 		# happy = Item.new("Happy Time", "This is Sir Happy being himself. Happy.", "photo4.jpg")
 		# carrot = Item.new("Ampalaya", "This is Sir Happy as an ampalaya. Sir, wag bitter. Hehe", "photo5.jpg")
+		# @items.push(gradpic, peace, bigboy, happy, carrot)
 		a = Item.new("Thinking of U", "This is Seohyun thinking of Sir Happy.", "1.gif")
 		b = Item.new("Singing to U", "This is Seohyun singing cutely to Sir Happy.", "2.gif")
 		c = Item.new("Goodmornin Ü", "This is Seohyun texting Sir Happy.", "3.gif")
@@ -18,5 +19,6 @@ class PagesController < ApplicationController
 	end
 
 	def gallery
+		
 	end
 end	

@@ -1,8 +1,12 @@
+<title>Lab 1 ~(-_-~)</title>
+<marquee><h3> Items </h3></marquee>
 <center>
-<h3> The Happy Faces </h3>
-  <% @items.each do |x| %>
-  	<b><%= x.name%></b><br>
-  	<%= image_tag x.img, :style => "height:200px;width:auto;" %><br>
-  	<%=x.desc%><br><br>
-  <% end %>
+<ul class="small-block-grid-2">
+<% @items.each do |x| %>
+<li>
+	<b><%= x.name%></b><br>
+	<%= image_tag x.img, :style => "height:200px;width:auto;" %><br>
+	<%=x.desc%><br><br>
+<% end %>
+</li>
 </center>

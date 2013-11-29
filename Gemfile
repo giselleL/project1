@@ -34,6 +34,10 @@ end
 
 # Flexslider for carousel
 gem 'flexslider', :git => 'https://github.com/constantm/Flexslider-2-Rails-Gem.git'
+# Galleria for carousel
+gem 'galleria-rails', github: 'albandiguer/galleria-rails'
+# Zurb Foundation
+gem 'zurb-foundation'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
