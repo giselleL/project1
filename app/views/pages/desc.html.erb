@@ -1,0 +1,18 @@
+<h1>Search Results</h1>
+<% if @entries.count > 1 %>
+	<p>You have <%= @entries.count %> matches with the description <i>"<%= params[:desc] %>"</i>:</b><p>
+<% elsif @entries.count == 1 %>
+	<p>You have <%= @entries.count %> match with the description <i>"<%= params[:desc] %>"</i>:</b><p>
+<% else %>
+	<p>Your search returned 0 results. Try another description!</p>
+<% end %>
+<center>
+<ul class="small-block-grid-2">
+<% @entries.each do |x| %>
+<li>
+	<b><%= x.name%></b><br>
+	<%= image_tag x.img, :style => "height:200px;width:auto;" %><br>
+	<%=x.desc%><br><br>
+<% end %>
+</li>
+</center>

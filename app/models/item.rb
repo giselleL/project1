@@ -1,14 +1,11 @@
-class Item
-	attr_accessor :name, :desc, :img
+class Item < ActiveRecord::Base
+	#attr_accessible :name, :desc, :img
 
-	def initialize(name, desc, img)
-		@name = name
-		@desc = desc
-		@img = img
-	end
-
-	def to_s
-		name
-		desc
-	end
+	def self.search(search)
+  if search
+    find(:all, :conditions => ['name LIKE ?', "%#{search}%"])
+  else
+    find(:all)
+  end
+end
 end

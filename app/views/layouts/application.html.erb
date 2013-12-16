@@ -1,14 +1,16 @@
-
+<title>Lab 2 ~(-_-~)</title>
 <nav class="top-bar">
   <ul class="title-area">
     <li class="name">
-      <h1><%= link_to "Gallery", gallery_path %></h1>
+      <h1><%= link_to "Lab 2: Routes, Controllers, Views", root_path %></h1>
     </li>
   </ul>
   <section class="top-bar-section">
     <ul class="right">
       <li class="divider"></li>
-      <li><%= link_to "Home", root_path %></li>
+      <li><%= link_to "Home - Latest", root_path %></li>
+      <li class="divider"></li>
+      <li><%= link_to "All Items", all_path %></li>
       <li class="divider"></li>
       <li><%= link_to "About", about_path %></li>
       <li class="divider"></li>
@@ -20,12 +22,20 @@
 <div class="row">
   <div class="small-9 columns" style="padding-right:50px"><%= yield %></div>
   <div class="small-3 columns">
-    <h2 class="subheader">This is Lab 1</h2>
+    <h2 class="subheader">This is Lab 2</h2>
     <b>Submitted by:</b><br><br>
     Giselle Lingcon - 4 BS MIS<br><br>
     Sai Osano - 4 BS MIS<br><br>
     Rimina Patolot - 4 BS MIS<br><br>
-    Ryan Santos - BS MIS
+    Ryan Santos - BS MIS<br><br><br>
+
+    <b>To search:</b><br><br>
+    /search/:name/name<br>
+    <i>For the name of the item</i><br><br>
+    /search/:desc/desc<br>
+    <i>For the description of the item</i><br><br>
+    /search/:img/img<br>
+    <i>For the image filename of the item</i><br>
   </div>
 </div>
 
@@ -49,7 +59,7 @@
     <%= stylesheet_link_tag "application" %>
     <%= javascript_include_tag "vendor/custom.modernizr" %>
     <%=stylesheet_link_tag "jquery.orbit.css"%>
-<%= javascript_include_tag "jquery.orbit"%>
+    <%= javascript_include_tag "jquery.orbit"%>
 
     <%= csrf_meta_tags %>
   </head><!-- 

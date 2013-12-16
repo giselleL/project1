@@ -1,0 +1,10 @@
+<h3>Latest Item</h3>
+<%=@item.created_at.strftime("Created last %A, %B %d, %Y at %I:%M %p")%><br><br>
+<center>
+<ul class="small-block-grid-1">
+<li>
+	<b><%= @item.name%></b><br>
+	<%= image_tag @item.img, :style => "height:200px;width:auto;" %><br>
+	<%=@item.desc%><br>
+</li>
+</center>
